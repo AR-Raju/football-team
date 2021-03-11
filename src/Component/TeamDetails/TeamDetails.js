@@ -5,9 +5,6 @@ import { useParams } from "react-router";
 import Header from "../Header/Header";
 import maleImg from "../../Photo/male.png";
 import femaleImg from "../../Photo/female.png";
-import fblogo from "../../Icon/Facebook.png";
-import twlogo from "../../Icon/Twitter.png";
-import ytlogo from "../../Icon/YouTube.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFlagCheckered,
@@ -15,6 +12,11 @@ import {
   faFutbol,
   faVenusMars,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitterSquare,
+  faYoutubeSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 const TeamDetails = () => {
   const { id } = useParams();
@@ -96,23 +98,26 @@ const TeamDetails = () => {
             doloremque.
           </p>
           <footer>
-            <div className="text-center">
+            <div className="d-flex justify-content-center ">
               <a
                 href={`Https://${strTwitter}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={twlogo} alt="" />
+                <FontAwesomeIcon
+                  className="fa-5x mr-3"
+                  icon={faTwitterSquare}
+                />
               </a>
               <a
                 href={`Https://facebook.com/${strTeam}`}
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={fblogo} alt="" />
+                <FontAwesomeIcon className="fa-5x mr-3" icon={faFacebook} />
               </a>
               <a href={`Http://${strYoutube}`} target="_blank" rel="noreferrer">
-                <img src={ytlogo} alt="" />
+                <FontAwesomeIcon className="fa-5x" icon={faYoutubeSquare} />
               </a>
             </div>
           </footer>

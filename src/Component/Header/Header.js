@@ -20,7 +20,7 @@ const Header = (props) => {
         <img className="center" src={strTeamBadge} alt="" />
       ) : (
         <h1 className="center text-white font-weight-bold">
-          Football Championship
+          Private Team Detective
         </h1>
       )}
     </div>
