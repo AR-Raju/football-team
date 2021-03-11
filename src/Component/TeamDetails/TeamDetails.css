@@ -1,0 +1,13 @@
+footer img {
+  width: 90px;
+  height: 90px;
+}
+.team-style {
+  background-color: #282c34;
+}
+.card-style {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: rgb(2, 69, 145);
+}
