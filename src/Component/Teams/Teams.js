@@ -8,7 +8,7 @@ const Teams = (props) => {
   const { strTeam, strTeamBadge, idTeam } = props.teams;
   return (
     <div className="text-center">
-      <Card style={{ width: "22rem", marginBottom: "20px", marginTop: "10px" }}>
+      <Card style={{ width: "19rem", marginBottom: "20px", marginTop: "10px" }}>
         <Card.Img variant="top" src={strTeamBadge} />
         <Card.Body>
           <Card.Title>{strTeam}</Card.Title>
