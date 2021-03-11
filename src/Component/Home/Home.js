@@ -20,7 +20,7 @@ const Home = () => {
         <Container>
           <Row>
             {teams.map((tm) => (
-              <Col mt={2} xs={12} md={6} lg={4}>
+              <Col mt={2} xs={12} sm={12} md={6} lg={4}>
                 <Teams teams={tm}></Teams>
               </Col>
             ))}
